@@ -1,0 +1,16 @@
+# Hyperparameters for the unlearning solution.
+# target_class=9 matches the worked example in the original notebook; the
+# hidden test set grades unlearning of a different, undisclosed class.
+
+seed: 101
+data_root: "data"
+checkpoint_path: "data/lenet_base_final.pt"
+target_class: 9
+batch_size: 64
+
+steps: 100
+learning_rate: 0.0002
+alpha: 0.0   # weight of the forget-set gradient-ascent term (unused: uniformity term alone is enough)
+beta: 10.0   # weight of the forget-set KL-to-uniform term
+gamma: 6.0   # weight of the retain-set distillation term
+delta: 0.02  # weight of the proximal (L2-to-initial) term
