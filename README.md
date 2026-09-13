@@ -6,6 +6,10 @@ It is not the author's original competition submission.
 The reference pipeline uses a retain/forget split, performs a small number of ascent steps on the forget set, and constrains drift through distillation on the retain set.
 This is a practical approximation to retraining without the forgotten data and documents the crucial utility-forgetting tradeoff.
 
+![Machine-unlearning task illustration](assets/task-machine-unlearning.jpg)
+
+*Task illustration referenced by the official Polish AI Olympiad II final notebook.*
+
 ## Quick start
 
 `python -m unittest discover -s tests -v`
