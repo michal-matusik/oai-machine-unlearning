@@ -5,8 +5,7 @@ classification layer, without hurting accuracy on the other nine classes, and wi
 inference-attackable fingerprint of the forgotten class in its predictions.
 
 This repository is a reconstructed reference solution for the final-stage Machine Unlearning task
-in the Polish Artificial Intelligence Olympiad (Olympiad II). It is not the author's original
-competition submission.
+in the Polish Artificial Intelligence Olympiad (Olympiad II). 
 
 ![Machine-unlearning task illustration](assets/task-machine-unlearning.jpg)
 
